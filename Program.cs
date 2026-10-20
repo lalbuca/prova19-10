@@ -49,5 +49,44 @@ app.MapPost("/api/folha/cadastrar", (Folha? folha) =>
 
 });
 
+//Funcionalidade 2 - Listar Folhas Cadastradas
+app.MapGet("/api/folha/listar", () =>
+{
+    if (folhas.Count == 0)
+    {
+        return Results.BadRequest("A lista de folhas está vazia");
+    }
+    return Results.Ok(folhas);
+});
+
+//Funcionalidade 3 - Buscar folha por CPF Mes e Ano
+app.MapGet("/api/produto/buscar/{cpf}/{mes}/{ano}", (string cpf, int mes, int ano) =>
+{
+
+    Folha? resultado = folhas.FirstOrDefault(x => x.Cpf == cpf);
+    if(resultado is null)
+    {
+        return Results.NotFound("Folha não encontrada!");
+    }
+    return Results.Ok(resultado);
+
+});
+
+//Funcionalidade 4 – Remoção de Folha por CPF, Mês e Ano
+
+app.MapDelete("/api/produto/remover/{cpf}/{mes}/{ano}", (string cpf, int mes, int ano) =>
+{
+    //Expressão Lambda
+    Folha? resultado = folhas.FirstOrDefault(x => x.Cpf == cpf);
+    if(resultado is null)
+    {
+        return Results.NotFound("Produto não encontrado!");
+    }
+    folhas.Remove(resultado);
+    return Results.Ok(resultado);
+});
+
+//Funcionalidade 5 – Total Líquido de Todas as Folhas
+
 
 app.Run();

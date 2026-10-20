@@ -1,4 +1,21 @@
 ### Raiz do projeto
 GET  http://localhost:5256
 
-###
+### Cadastro da Folha
+POST http://localhost:5256/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Ana Souza",
+    "cpf": "123.456.789-00",
+    "mes": 10,
+    "ano": 2025,
+    "horasTrabalhadas": 160,
+    "valorHora": 50
+}
+
+### Listagem das Folhas
+GET http://localhost:5256/api/folha/listar
+
+### Listagem por parametros
+GET http://localhost:5256/api/folha/buscar/123.456.789-00/10/2025

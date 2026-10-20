@@ -134,3 +134,4 @@ C:\Users\LENOVO\Faculdade\UP\4 PERIODO\DESENVOLVIMENTO DE SOFTWARE VISUAL\Prova-
 C:\Users\LENOVO\Faculdade\UP\4 PERIODO\DESENVOLVIMENTO DE SOFTWARE VISUAL\Prova-19-10\LucasAlbuquerque\LucasDeAlbuquerque\obj\Debug\net8.0\LucasDeAlbuquerque.pdb
 C:\Users\LENOVO\Faculdade\UP\4 PERIODO\DESENVOLVIMENTO DE SOFTWARE VISUAL\Prova-19-10\LucasAlbuquerque\LucasDeAlbuquerque\obj\Debug\net8.0\LucasDeAlbuquerque.genruntimeconfig.cache
 C:\Users\LENOVO\Faculdade\UP\4 PERIODO\DESENVOLVIMENTO DE SOFTWARE VISUAL\Prova-19-10\LucasAlbuquerque\LucasDeAlbuquerque\obj\Debug\net8.0\ref\LucasDeAlbuquerque.dll
+C:\Users\LENOVO\Faculdade\UP\4 PERIODO\DESENVOLVIMENTO DE SOFTWARE VISUAL\Prova-19-10\LucasAlbuquerque\LucasDeAlbuquerque\obj\Debug\net8.0\LucasDeAlbuquerque.sourcelink.json
